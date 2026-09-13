@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  server: 172.64.229.2
-  port: 80
+  server: 162.159.39.218
+  port: 2052
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -16,16 +16,20 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
-  server: 162.159.43.187
-  port: 8080
+  server: 172.67.130.144
+  port: 443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
+  tls: true
+  servername: ez-1bc8ab.sekiro-c18.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /sync
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: ez-1bc8ab.sekiro-c18.workers.dev
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   server: 62.233.39.9
   port: 8443
@@ -36,7 +40,7 @@ proxies:
   reality-opts:
     public-key: oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk
   servername: dl.dell.com
-  client-fingerprint: ios
+  client-fingerprint: qq
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
