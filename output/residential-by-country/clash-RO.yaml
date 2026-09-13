@@ -14,7 +14,6 @@ proxies:
   tls: true
   servername: roma2.moritech.net
   skip-cert-verify: false
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
