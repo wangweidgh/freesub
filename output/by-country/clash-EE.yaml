@@ -36,6 +36,7 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
