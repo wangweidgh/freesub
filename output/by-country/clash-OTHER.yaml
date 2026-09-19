@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 172.67.134.170
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: 104.16.3.98
   port: 443
   udp: true
   type: vless
-  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   tls: true
-  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  servername: u.srilankangrill.online
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    path: /
     headers:
-      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+      Host: u.srilankangrill.online
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 rules:
 - MATCH,PROXIES
