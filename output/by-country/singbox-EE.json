@@ -48,11 +48,7 @@
       "tls": {
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ]
+        "insecure": false
       }
     },
     {
