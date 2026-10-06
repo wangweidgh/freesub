@@ -5,6 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  server: 104.21.16.123
+  port: 443
+  udp: true
+  type: trojan
+  password: Telegram_healer_config
+  sni: 7x7o3vtq5z6ymu3hv1fh-op9blt.hya6losm6lznoxhm6w3mk.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /tr/qL8YIeH28wNcXfNTPgLCwOhNFEr?ed=2560
+- name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
+  server: 104.21.67.113
+  port: 443
+  udp: true
+  type: trojan
+  password: Telegram_healer_config
+  sni: x0C3lq1A15ip-65Kc4-l1A1tx.cv4CGvqS05m-F4Hg5xU07wIAlm0.wOrkerS.DeV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/rkSn26veCGpvDy162Z?ed=2560
+- name: 🇧🇷 巴西 (Brazil) 03 - xiaohe
   server: 89.39.161.157
   port: 443
   udp: true
@@ -18,19 +40,21 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-    headers:
-      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 03 - xiaohe
 rules:
 - MATCH,PROXIES
